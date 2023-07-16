@@ -123,13 +123,6 @@ public class AlienClockController {
         int earthTimeInSeconds = calculateEarthTimeInSeconds(year, month, day, hour, minute, second);
         int alienTimeInSeconds = earthTimeInSeconds / 2;
 
-        alienYear = 2804;
-        alienMonth = 18;
-        alienDay = 31;
-        alienHour = 2;
-        alienMinute = 2;
-        alienSecond = 88;
-
         // Increment alien time by 1 second until it matches the calculated alien time
         while (alienTimeInSeconds > 0) {
             incrementAlienTime(); // Increment alien time by 1 second
