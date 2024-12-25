@@ -20,4 +20,5 @@ jobs:
           java-version: 17
           distribution: 'zulu'
       - name: Run tests
+        working-directory: ${{ github.workspace }}/YTL
         run: mvn clean test
